@@ -1,5 +1,4 @@
 from langchain_groq import ChatGroq
-import os
 
 LLM  = ChatGroq(model="openai/gpt-oss-20b",groq_api_key="")
 def refine_the_prompt(query):
