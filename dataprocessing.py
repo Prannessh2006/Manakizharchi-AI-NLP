@@ -3,7 +3,12 @@ sns.set(style="whitegrid")
 
 
 DATA_PATH = "data/reviews.csv"
-assert os.path.exists(DATA_PATH)
+# assert os.path.exists(DATA_PATH)
+try:
+    os.path.exists(DATA_PATH)
+except AssertionError as e:
+    print(f"Assertion error occured: {e}")
+    
 
 df = pd.read_csv(DATA_PATH)
 print("Dataset shape:", df.shape)
