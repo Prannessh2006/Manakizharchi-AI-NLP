@@ -1,7 +1,7 @@
 from langchain_groq import ChatGroq
 import os
 
-LLM  = ChatGroq(model="openai/gpt-oss-20b",groq_api_key="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")
+LLM  = ChatGroq(model="openai/gpt-oss-20b",groq_api_key="")
 def refine_the_prompt(query):
   prompt = """These are the books in my database:
     An Introduction to Data Science: https://mrcet.com/downloads/digital_notes/CSE/II%20Year/DS/Introduction%20to%20Datascience%20%5BR20DS501%5D.pdf",
